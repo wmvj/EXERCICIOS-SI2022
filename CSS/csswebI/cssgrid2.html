@@ -11,7 +11,7 @@
             height: calc(100% - 40px);
             background-color: lightgray;
         }
-        
+
         div {
             display: flex;
             align-items: center;
@@ -19,6 +19,25 @@
             font-size: 30px;
             border: solid 5px dodgerblue;
             background: #fff;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns:
+                [inicio]1fr [metade-esquerda]1fr [metade-direita]1fr [fim];
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 20px;
+            row-gap: 20px;
+            gap: 10px;
+        }
+
+        .d1 {
+            grid-column-start: metade-direita;
+            grid-column-end: fim;
+            grid-column: metade-esquerda / fim;
+            grid-row: 1 / span 2;
+            /* row-start column-start row-end column-end*/
+            grid-area: 1 / metade-esquerda / span 3 / fim;
         }
     </style>
 </head>

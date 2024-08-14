@@ -1,5 +1,15 @@
 .card-listing {
+	display: grid;
+	column-gap: 10px;
+	row-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(2, 10rem);
 	padding: .5rem;
+}
+
+.card:first-child{
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .card {
