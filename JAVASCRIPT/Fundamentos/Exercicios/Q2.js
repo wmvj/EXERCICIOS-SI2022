@@ -1,3 +1,9 @@
+// comando para instalar o pacote "prompt-sync:"
+// npm i prompt-sync
+
+
+const prompt = require("prompt-sync")()
+
 let num1 = parseFloat(prompt("Digite o primeiro numero: "))
 let num2 = parseFloat(prompt("Digite o segundo numero: "))
 let num3 = parseFloat(prompt("Digite o terceiro numero: "))
