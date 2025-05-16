@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid{
+  display: grid;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+
+  /* align-content: end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* place-content: center; */
+  /* place-content: end; */
+  /* place-content: space-evenly; */
+  /* place-content: space-between; */
+  /* place-content: space-around; */
+
+  /* align-items: stretch; */
+  /* align-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+
+  /* justify-items: start; */
+  /* justify-items: center; */
+  /* justify-items: end; */
+
+  /* place-items: start; */
+  /* place-items: end; */
+  /* place-items: center; */
+
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.grid > div{
+  background-color: cornflowerblue;
+  border: 2px solid yellow;
+}
+
+.grid div:nth-child(2){
+  /* align-self: start; */
+  /* align-self: center; */
+  /* align-self: end; */
+  /* justify-self: start; */
+  /* justify-self: center; */
+  /* justify-self: end; */
+  /* place-self: center; */
+  place-self: start;
+}
+
