@@ -11,6 +11,19 @@ console.log("Curso ".concat(curso).concat("!"))
 console.log(curso.replace(2,"e"))
 console.log('Ana,Maria,Pedro'.split(","))
 
+// Template String
 
+const nome = 'Rebeca'
+const concatenacao = 'Olá ' + nome + '!'
+const template = `
+    Olá
+    ${nome}!`
+console.log(concatenacao, template)
+
+// expressoes...
+console.log(`1 + 1 = ${1 + 1}`)
+
+const up = texto => texto.toUpperCase()
+console.log(`Ei... ${up('cuidado')}!`)
 
 
