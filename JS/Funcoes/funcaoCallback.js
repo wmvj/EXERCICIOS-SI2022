@@ -1,3 +1,5 @@
+// Passar uma função como argumento para outra função para ser executada uma ou várias vezes
+
 const fabricantes = ['Fiat', 'Byd', 'Ford']
 
 

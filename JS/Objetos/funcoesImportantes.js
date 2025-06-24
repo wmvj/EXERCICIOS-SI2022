@@ -13,7 +13,7 @@ Object.entries(pessoa).forEach(([chave, valor]) => {
 })
 
 Object.defineProperty(pessoa, 'dataNascimento',{
-    enumerable: true,
+    enumerable: true, // vai aparecer no for in (listado)
     writable: false,
     value: '01/01/2021'
 })
@@ -21,6 +21,7 @@ Object.defineProperty(pessoa, 'dataNascimento',{
 // console.log(pessoa)
 pessoa.dataNascimento = '01/01/2022'
 console.log(pessoa.dataNascimento)
+console.log(Object.keys(pessoa))
 
 const dest = {a: 1}
 const o1 = {b: 2}
