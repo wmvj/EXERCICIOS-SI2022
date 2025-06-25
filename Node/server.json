@@ -1,0 +1,7 @@
+{
+    "products": [
+        {"id":"1", "name": "iPad", "Price": 1356.67},
+        {"id":"2", "name": "teclado", "Price": 56.21},
+        {"id":"3", "name": "monitor", "Price": 500.57}
+    ]
+}
